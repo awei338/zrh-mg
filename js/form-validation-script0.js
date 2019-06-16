@@ -6,6 +6,8 @@ var Script = function () {
 
     $().ready(function() {
         // validate the comment form when it is submitted
+        $("#commentForm").validate();
+
         // validate signup form on keyup and submit
         $("#signupForm").validate({
             rules: {

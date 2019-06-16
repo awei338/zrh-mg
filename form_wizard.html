@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Mosaddek">
-    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-    <link rel="shortcut icon" href="img/favicon.html">
 
-    <title>Form Wizard</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <!-- <meta name="author" content="Mosaddek"> -->
+  <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <link rel="shortcut icon" href="img/favicon.html">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-reset.css" rel="stylesheet">
-    <!--external css-->
-    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet" />
+  <title>Form Wizard</title>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
-    <!--[if lt IE 9]>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-reset.css" rel="stylesheet">
+  <!--external css-->
+  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+  <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
+<body>
 
 
-  <section id="container" class="">
-      <!--#include virtual='header.html'-->
-      <!--#include virtual='aside.html'--> 
-      <!--main content start-->
-      <section id="main-content">
-          <section class="wrapper">
-              <!-- page start-->
-              <div class="row">
-                  <div class="col-lg-12">
-                      <section class="panel">
-                          <header class="panel-heading">
-                              Forms Wizard
-                          </header>
-                          <div class="panel-body">
-                              <div class="stepy-tab">
+  <section id="container">
+    <!--#include virtual='header.html'-->
+    <!--#include virtual='aside.html'-->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <!-- page start-->
+        <div class="row">
+          <div class="col-lg-12">
+            <section class="panel">
+              <header class="panel-heading">
+                添加菜单
+              </header>
+              <div class="panel-body">
+                <!-- <div class="stepy-tab">
                                   <ul id="default-titles" class="stepy-titles clearfix">
                                       <li id="default-title-0" class="current-step">
                                           <div>Step 1</div>
@@ -55,136 +55,133 @@
                                           <div>Step 3</div>
                                       </li>
                                   </ul>
-                              </div>
-                              <form class="form-horizontal" id="default">
-                                  <fieldset title="Step1" class="step" id="default-step-0">
-                                      <legend> </legend>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Full Name</label>
-                                          <div class="col-lg-10">
-                                              <input type="text" class="form-control" placeholder="Full Name">
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Email Address</label>
-                                          <div class="col-lg-10">
-                                              <input type="text" class="form-control" placeholder="Email Address">
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">User Name</label>
-                                          <div class="col-lg-10">
-                                              <input type="text" class="form-control" placeholder="Username">
-                                          </div>
-                                      </div>
+                              </div> -->
+                <form class="cmxform form-horizontal tasi-form" id="default" action="#">
+                  <fieldset title="Step1" class="step" id="default-step-0">
+                    <legend> </legend>
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label" for="menu_name">菜单名</label>
+                      <div class="col-lg-10">
+                        <input type="text" name="name" id="menu_name" class="form-control"  placeholder="菜单名"/>
+                      </div>
+                    </div>
 
-                                  </fieldset>
-                                  <fieldset title="Step 2" class="step" id="default-step-1" >
-                                      <legend> </legend>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Phone</label>
-                                          <div class="col-lg-10">
-                                              <input type="text" class="form-control" placeholder="Phone">
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Mobile</label>
-                                          <div class="col-lg-10">
-                                              <input type="text" class="form-control" placeholder="Mobile">
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Address</label>
-                                          <div class="col-lg-10">
-                                              <textarea class="form-control" cols="60" rows="5"></textarea>
-                                          </div>
-                                      </div>
+                    <div class="form-group">
+                      <label class="col-lg-2 control-label" for="menu_pid">选择父菜单</label>
+                      <div class="col-lg-10">
+                        <select class="form-control" name="pId" id="menus">
+                          <option value="-1">请选择父菜单</option>
+                        </select>
+                      </div>
+                    </div>
 
-                                  </fieldset>
-                                  <fieldset title="Step 3" class="step" id="default-step-2" >
-                                      <legend> </legend>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Full Name</label>
-                                          <div class="col-lg-10">
-                                              <p class="form-control-static">Tawseef Ahmed</p>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Email Address</label>
-                                          <div class="col-lg-10">
-                                              <p class="form-control-static">tawseef@vectorlab.com</p>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">User Name</label>
-                                          <div class="col-lg-10">
-                                              <p class="form-control-static">tawseef</p>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Phone</label>
-                                          <div class="col-lg-10">
-                                              <p class="form-control-static">01234567</p>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Mobile</label>
-                                          <div class="col-lg-10">
-                                              <p class="form-control-static">01234567</p>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="col-lg-2 control-label">Address</label>
-                                          <div class="col-lg-10">
-                                              <p class="form-control-static">
-                                                  Dreamland Ave, Suite 73
-                                                  AU, PC 1361
-                                                  P: (123) 456-7891 </p>
-                                          </div>
-                                      </div>
-                                  </fieldset>
-                                  <input type="submit" class="finish btn btn-danger" value="Finish"/>
-                              </form>
-                          </div>
-                      </section>
-                  </div>
+                  </fieldset>
+
+                  <input type="submit" class="finish btn btn-danger" id="submitter" value="Finish" />
+                </form>
               </div>
-              <!-- page end-->
-          </section>
+            </section>
+          </div>
+        </div>
+        <!-- page end-->
       </section>
-      <!--main content end-->
+    </section>
+    <!--main content end-->
   </section>
 
-    <!-- js placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootbox.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 
 
 
-    <!--common script for all pages-->
-    <script src="js/common-scripts.js"></script>
+  <!--common script for all pages-->
+  <script src="js/common-scripts.js"></script>
 
-    <!--script for this page-->
-    <script src="js/jquery.stepy.js"></script>
+  <!--script for this page-->
+  <script src="js/jquery.stepy.js"></script>
 
 
   <script>
 
-      //step wizard
+  $.validator.setDefaults({
+      submitHandler: function() {
+        $.ajax({
+          url: "http://localhost:8080/left_menu_add", //提交地址
+          data: $('#default').serialize(), //将表单数据序列化
+          type: "POST",
+          dataType: "json",
+          success: function(result) {
+            if (result.result == 'success') {
+              bootbox.alert({
+                size: "small",
+                backdrop: true,
+                message: "提交成功",
+              })
+            } else {
+              bootbox.alert({
+                size: "small",
+                backdrop: true,
+                message: "提交失败",
+              })
+            }
+          },
+          error: function(xhr) {
+            bootbox.alert({
+              size: "small",
+              backdrop: true,
+              message: "错误提示： " + xhr.status + " " + xhr.statusText,
+            })
+          }
+        });
+      }
+  });
 
-      $(function() {
-          $('#default').stepy({
-              backLabel: 'Previous',
-              block: true,
-              nextLabel: 'Next',
-              titleClick: true,
-              titleTarget: '.stepy-tab'
-          });
+    $(function() {
+      $("#default").validate({
+          rules: {
+              name : "required",
+              pId : {
+                    required:true,
+                    min : 0
+                          }
+          },
+          messages : {
+             menu_name : "Please enter your firstname",
+             menu_pid : "Please enter your 福彩的"
+          }
       });
+
+
+   $.ajax({
+       url:  "http://localhost:8080/left_menu_list",
+       type: "get",
+       contentType: "application/json;charset=utf-8",
+       dataType: "json",
+       success: function (json) {
+           //遍历成功返回的json数据，取出对应内容进行展示
+           $.each(json, function (index,item) {
+               var menu_id = json[index].id;
+               var menu_name = json[index].name;
+               var menu_pid = json[index].pid;
+               var menu_floor = json[index].menuFloor;
+               //构造动态option
+               $('#menus').append("<option value='"+menu_id+"'>"+menu_name+"</option>")
+           });
+       },
+       error: function () {
+
+       }
+   });
+
+    });
   </script>
 
 
-  </body>
+</body>
+
 </html>
